@@ -1,0 +1,6 @@
+*.
+*.exe
+*.res
+*.obj
+*.undo
+/Bak
