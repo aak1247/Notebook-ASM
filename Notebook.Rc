@@ -1,0 +1,57 @@
+#define IDR_MENU1 10000
+#define IDM_START 10001
+#define IDM_QUIT 10002
+#define IDR_MENU2 10100
+#define IDM_SHOW 10004
+#define IDM_COMB 10008
+#define IDM_WORDS 10009
+#define IDM_ADD 10005
+#define IDM_CHGSOU 10006
+#define IDM_SLIENCE 10007
+#define IDM_SAVE 10003
+#define IDR_VERSION1 1
+#define IDB_BMP1 20001
+
+
+#include "src/resource.h"
+
+IDR_MENU1 MENU
+BEGIN
+  MENUITEM "开始",IDM_START
+  MENUITEM "保存(&S)",IDM_SAVE
+  POPUP "选项(&P)"
+  BEGIN
+  	MENUITEM "当前输入统计",IDM_SHOW
+  	MENUITEM "历史最大连击",IDM_COMB
+  	MENUITEM "历史最大输入",IDM_WORDS
+  	MENUITEM "开始新笔记(&A)",IDM_ADD
+  	MENUITEM "更换键盘音效",IDM_CHGSOU
+  	MENUITEM "打开/关闭音效",IDM_SLIENCE
+  END
+  MENUITEM "退出(&X)",IDM_QUIT
+END
+
+
+
+;IDB_BMP1 BITMAP "Res/BACK.bmp"
+
+IDR_VERSION1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEOS 0x00000004
+FILETYPE 0x00000001
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080404B0"
+    BEGIN
+      VALUE "FileVersion", "1.0.0.0\0"
+      VALUE "ProductVersion", "1.0.0.0\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0804, 0x04B0
+  END
+END
+
