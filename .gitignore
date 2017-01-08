@@ -3,4 +3,4 @@
 *.res
 *.obj
 *.undo
-/Bak
+*.db
